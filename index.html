@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="SHREYVERSE — a futuristic gaming gear storefront demo.">
+  <title>SHREYVERSE | Level Up Your Setup</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">✦ LEVEL UP YOUR SETUP <span>—</span> FREE SHIPPING ON DEMO ORDERS OVER ₹2,999</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="SHREYVERSE home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 9h32v30H8z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M30 15H18l-3 8h15l-3 9H14" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M34 14v20" stroke="#a8ff35" stroke-width="3"/></svg></span>
+      <span class="brand-word">SHREY<span>VERSE</span><i>.</i></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#shop">Shop</a><a href="#featured">Featured</a><a href="#perks">Why us</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchFocus" aria-label="Focus product search" title="Search">⌕</button>
+      <button class="header-pill" id="wishlistOpen" aria-label="Open wishlist">♡ <span>Saved</span><b id="wishlistCount">0</b></button>
+      <button class="header-pill cart-trigger" id="cartOpen" aria-label="Open shopping cart">▣ <span>Cart</span><b id="cartCount">0</b></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YOUR NEXT LEVEL STARTS HERE</div>
+        <h1>PLAY HARD.<br>STAY <em>LEGENDARY.</em></h1>
+        <p class="hero-description">Gear up for your next win. Discover consoles, precision peripherals and desk upgrades made for your ultimate setup.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#shop">Explore the drop <span>↗</span></a>
+          <a class="button button-ghost" href="#featured">Discover the vibe</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>08<span>+</span></strong><small>CURATED PRODUCTS</small></div>
+          <div><strong>4.9<span>/5</span></strong><small>DEMO PLAYER RATING</small></div>
+          <div><strong>100<span>%</span></strong><small>GAMER ENERGY</small></div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Neon gaming setup artwork">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="visual-glow"></div>
+        <div class="visual-chip chip-top"><span class="tiny-dot"></span> PLAYER APPROVED <b>★ 4.9</b></div>
+        <div class="controller-art" aria-hidden="true">
+          <svg viewBox="0 0 520 330"><defs><linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4f5ff"/><stop offset=".52" stop-color="#aeb7d4"/><stop offset="1" stop-color="#606b89"/></linearGradient><linearGradient id="handle" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#2b334d"/><stop offset="1" stop-color="#0b101c"/></linearGradient></defs><path d="M153 70Q185 47 220 64H300Q335 47 367 70Q402 99 427 202Q439 251 404 258Q376 264 347 217L313 183H207L173 217Q144 264 116 258Q81 251 93 202Q118 99 153 70Z" fill="url(#body)" stroke="#edf0ff" stroke-width="4"/><path d="M136 126Q156 99 186 103L209 119H311L334 103Q364 99 384 126L397 191Q365 180 337 201H183Q155 180 123 191Z" fill="url(#handle)"/><path d="M159 137v43m-22-21h44" stroke="#a8ff35" stroke-width="11" stroke-linecap="round"/><circle cx="337" cy="132" r="10" fill="#ff4db8"/><circle cx="360" cy="155" r="10" fill="#a8ff35"/><circle cx="314" cy="155" r="10" fill="#9c78ff"/><circle cx="337" cy="178" r="10" fill="#52dcff"/><circle cx="224" cy="145" r="24" fill="#151b2b" stroke="#7c86a7" stroke-width="5"/><circle cx="296" cy="145" r="24" fill="#151b2b" stroke="#7c86a7" stroke-width="5"/><circle cx="224" cy="145" r="10" fill="#323d5b"/><circle cx="296" cy="145" r="10" fill="#323d5b"/><rect x="242" y="86" width="36" height="9" rx="4" fill="#252d43"/><path d="M183 210Q260 235 337 210" fill="none" stroke="#a8ff35" stroke-width="3"/></svg>
+        </div>
+        <div class="visual-chip chip-bottom"><span>⚡</span><div><b>LOADOUT UPGRADED</b><small>Ready when you are.</small></div></div>
+        <div class="visual-caption">SHREYVERSE / PLAYER 001</div>
+      </div>
+    </section>
+
+    <section class="shop-section wrap" id="shop">
+      <div class="section-heading">
+        <div><div class="section-kicker">THE COLLECTION</div><h2>THE LOOT DROP<span>.</span></h2><p>Curated gear for your next big win.</p></div>
+        <div class="collection-count"><span class="tiny-dot"></span> DEMO STORE · 08 ITEMS</div>
+      </div>
+      <div class="shop-toolbar">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search controllers, headsets, keyboards..." autocomplete="off"><kbd>/</kbd></label>
+        <select id="sortSelect" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="name">Name: A–Z</option></select>
+      </div>
+      <div class="category-tabs" role="group" aria-label="Filter products">
+        <button class="category-tab active" data-category="All">All gear <span>08</span></button>
+        <button class="category-tab" data-category="Console">Consoles</button>
+        <button class="category-tab" data-category="Accessories">Accessories</button>
+        <button class="category-tab" data-category="Audio">Audio</button>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <div class="no-results hidden" id="noResults"><span>⌕</span><h3>No gear found</h3><p>Try a different search or category.</p><button class="button button-ghost" id="resetFilters">Reset filters</button></div>
+    </section>
+
+    <section class="featured-banner wrap" id="featured">
+      <div class="banner-copy"><div class="section-kicker">BUILT FOR YOUR NEXT WIN</div><h2>GOOD GEAR.<br><em>GREAT PLAYS.</em></h2><p>From the first click to the final boss, make every part of your setup feel like yours.</p><a class="button button-primary" href="#shop">Find your gear <span>↗</span></a></div>
+      <div class="banner-art"><div class="banner-ring"></div><div class="banner-ring ring-two"></div><span>SV</span><small>PLAYER ONE</small></div>
+    </section>
+
+    <section class="perks-section wrap" id="perks">
+      <div class="section-heading compact"><div><div class="section-kicker">THE SHREYVERSE STANDARD</div><h2>WHY PLAY WITH US<span>.</span></h2></div></div>
+      <div class="perk-grid">
+        <article class="perk-card"><span class="perk-icon">↗</span><h3>BUILT FOR SPEED</h3><p>Find your next upgrade fast with search, smart filters and simple product details.</p></article>
+        <article class="perk-card"><span class="perk-icon">◇</span><h3>YOUR LOADOUT, YOUR WAY</h3><p>Save your favourites and keep your demo cart ready between visits.</p></article>
+        <article class="perk-card"><span class="perk-icon">✦</span><h3>PLAYER-FIRST DESIGN</h3><p>A responsive, neon-inspired shopping experience on desktop, tablet and mobile.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><a class="brand footer-brand" href="#"><span class="brand-mark"><svg viewBox="0 0 48 48"><path d="M8 9h32v30H8z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M30 15H18l-3 8h15l-3 9H14" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M34 14v20" stroke="#a8ff35" stroke-width="3"/></svg></span><span class="brand-word">SHREY<span>VERSE</span><i>.</i></span></a><p>Frontend gaming-store concept by Shrey Dubey · © 2026</p><span class="footer-tag">PLAY MORE. WORRY LESS. ✦</span></footer>
+
+  <div class="overlay hidden" id="overlay"></div>
+  <aside class="side-panel hidden" id="cartPanel" aria-label="Shopping cart" aria-modal="true" role="dialog">
+    <div class="panel-head"><div><span class="section-kicker">YOUR LOADOUT</span><h2>Loot bag <span id="cartPanelCount">(0)</span></h2></div><button class="close-button" data-close aria-label="Close cart">×</button></div>
+    <div class="panel-body" id="cartItems"></div>
+    <div class="panel-footer"><div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div><p class="demo-note">Demo checkout only — no real payment is collected.</p><button class="button button-primary full-button" id="checkoutOpen">Continue to checkout <span>→</span></button><button class="text-button" id="continueShopping">Continue shopping</button></div>
+  </aside>
+  <aside class="side-panel hidden" id="wishlistPanel" aria-label="Wishlist" aria-modal="true" role="dialog">
+    <div class="panel-head"><div><span class="section-kicker">SAVED FOR LATER</span><h2>Your wishlist <span id="wishlistPanelCount">(0)</span></h2></div><button class="close-button" data-close aria-label="Close wishlist">×</button></div>
+    <div class="panel-body" id="wishlistItems"></div>
+    <div class="panel-footer"><button class="button button-primary full-button" id="wishlistShop">Back to the drop <span>→</span></button></div>
+  </aside>
+
+  <div class="modal-wrap hidden" id="productModal" role="dialog" aria-modal="true" aria-label="Product details">
+    <div class="modal-card product-modal-card"><button class="close-button modal-close" data-close aria-label="Close details">×</button><div id="productModalContent"></div></div>
+  </div>
+  <div class="modal-wrap hidden" id="checkoutModal" role="dialog" aria-modal="true" aria-label="Demo checkout">
+    <div class="modal-card checkout-card"><button class="close-button modal-close" data-close aria-label="Close checkout">×</button><div class="section-kicker">FINAL CHECKPOINT</div><h2>Demo checkout<span>.</span></h2><p class="modal-subtitle">Enter sample details to preview the order confirmation. This form does not send data anywhere.</p>
+      <form id="checkoutForm">
+        <label>Full name<input name="name" required minlength="2" placeholder="Player name"></label>
+        <label>Email address<input name="email" type="email" required placeholder="player@example.com"></label>
+        <label>Demo delivery address<textarea name="address" required minlength="5" rows="2" placeholder="Street, city, PIN code"></textarea></label>
+        <div class="checkout-total"><span>Demo order total</span><strong id="checkoutTotal">₹0</strong></div>
+        <button class="button button-primary full-button" type="submit">Place demo order <span>↗</span></button>
+      </form>
+      <p class="demo-note">Prototype only. No payment, shipping or email confirmation occurs.</p>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
